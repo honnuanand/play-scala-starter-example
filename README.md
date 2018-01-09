@@ -12,6 +12,15 @@ Run this using [sbt](http://www.scala-sbt.org/).  If you downloaded this project
 sbt run
 ```
 
+## cf push
+
+This project can also be built with Gradle; so to prepare and deploy (assuming you've targeted a foundation):
+
+```bash
+gradle clean dist
+cf push
+```
+
 And then go to <http://localhost:9000> to see the running web application.
 
 There are several demonstration files available in this template.
