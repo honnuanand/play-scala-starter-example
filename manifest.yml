@@ -1,0 +1,10 @@
+---
+applications:
+- name: play-scala-starter-example
+  memory: 1024M
+  random-route: true
+  instances: 1
+  path: ./build/distributions/playBinary.zip
+  buildpack: java_buildpack
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
