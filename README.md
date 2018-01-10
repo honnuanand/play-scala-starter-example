@@ -16,13 +16,28 @@ And then go to <http://localhost:9000> to see the running web application.
 
 There are several demonstration files available in this template.
 
+## Packaging
+
+You will need to set an application secret.
+
+To set the application secret, please read http://playframework.com/documentation/latest/ApplicationSecret 
+
+To package the application for subsequent deployment:
+
+```bash
+sbt
+$ playUpdateSecret
+$ dist
+$ exit
+```
+
+An artifact will be created in `target/universal` sub-directory.
 
 ## cf push
 
 This project can also be built with Gradle; so to prepare and deploy (assuming you've targeted a foundation):
 
 ```bash
-gradle clean dist
 cf push
 ```
 
