@@ -33,14 +33,17 @@ $ exit
 
 An artifact will be created in `target/universal` sub-directory.
 
-## cf push
+## cf push to PWS
 
-This project can also be built with Gradle; so to prepare and deploy (assuming you've targeted a foundation):
+To deploy (assuming you've targeted a foundation):
 
 ```bash
+cf api api.run.pivotal.io
+cf login
 cf push
 ```
 
+After authenticating, picking and org and space the application should be deployed to Pivotal Web Services
 
 ## Controllers
 
